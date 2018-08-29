@@ -14,10 +14,7 @@
 							</div>
 							<hr class="hr-color">
 							<div class="body-ft-panel">
-							<p>jl.jongjolong no 25 </p>
-								<p>Buah Batu ,Bandung kidul </p>
-								<p>Kota Bandung, Jawa Barat </p>
-								<p>Indonesia | 40262 </p>
+								<?=$setting->alamat?>
 							</div>
 							<a class="btn btn-primary btn-sm" data-toggle="modal" href='#map'>Map it</a>
 						</div>
@@ -29,9 +26,9 @@
 							</div>
 							<hr class="hr-color">
 							<div class="body-ft-panel">
-								<p><i class="fa fa-clock-o"></i> Monday - Friday | 9 a.m - 5 p.m</p>
-								<p><i class="fa fa-envelope"></i> Office@tcb.co.id</p>
-								<p><i class="fa fa-phone"></i> +62 22 61456762 / 7323196</p>
+								<p><i class="fa fa-clock-o"></i> <?=$setting->jam_kerja?></p>
+								<p><i class="fa fa-envelope"></i> <?=$setting->email?></p>
+								<p><i class="fa fa-phone"></i> <?=$setting->telepon?> / <?=$setting->fax?>(fax)</p>
 							</div>
 						</div>
 					</div>

@@ -104,11 +104,11 @@
 						<ul>
 							<li>
 								<a href="">
-									<i class="fa fa-phone"></i> +62 22 6145 6762</a>
+									<i class="fa fa-phone"></i> <?=$setting->telepon?></a>
 							</li>
 							<li>
 								<a href="">
-									<i class="fa fa-envelope"></i> office@tcb.co.id</a>
+									<i class="fa fa-envelope"></i> <?=$setting->email?></a>
 							</li>
 							<!-- <li style="float:right;">
 								<a href="">Register&nbsp;&nbsp;
@@ -355,7 +355,7 @@
 								</p>
 							</div>
 							<div class="panel-footer-contact">
-								<button type="button" class="btn btn-primary form-control">CONTACT US</button>
+								<button type="button" onclick="addClient()" class="btn btn-primary form-control">CONTACT US</button>
 							</div>
 						</div>
 					</div>
@@ -368,7 +368,7 @@
 								</p>
 							</div>
 							<div class="panel-footer-contact">
-								<button type="button" class="btn btn-primary form-control">APPLY NOW</button>
+								<button type="button" onclick="addKarir()" class="btn btn-primary form-control">APPLY NOW</button>
 							</div>
 						</div>
 					</div>
