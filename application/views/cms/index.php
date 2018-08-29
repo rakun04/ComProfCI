@@ -171,7 +171,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="<?=base_url().'Welcome/contact'?>" class="three-d page-scroll">Reach US
+									<a href="#footer" class="three-d page-scroll">Reach US
 										<span aria-hidden="true" class="three-d-box">
 											<span class="front">Reach US</span>
 											<span class="back">Reach US</span>
@@ -418,17 +418,21 @@
 	<!-- //about-slid -->
 	<!--services section starts here-->
 	<?php $this->load->view("cms/include/footer"); ?>
+<script>
+$('.page-scroll').on('click',function(e){
+    var tujuan = $(this).attr('href');
+    var elementHref = $(tujuan);
+    console.log(elementHref);
+   console.log($('body').scrollTop()); 
+   $("html,body").animate({
+        scrollTop:elementHref.offset().top - 50
+    },1250,'easeInOutExpo');
+    console.log(elementHref.offset().top - 50);
+e.preventDefault();
+});
 
+</script>
 	<script type="text/javascript">
-		$('.page_scroll').on('click',function(e){
-			var tujuan = $(this).attr('href');
-			var elemenTujuan = $(tujuan);
-			$('body').animate({
-				scrollTop: elemenTujuan.offset().top - 50
-			}, 1250,'linear');
-			e.preventDefault();
-		});
-
 		var save_method;
 
 		$(document).ready(function () {
