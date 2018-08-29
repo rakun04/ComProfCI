@@ -21,6 +21,7 @@
 	<!-- Custom Theme files -->
 	<link href="<?=base_url().'assets/cms/css/bootstrap.css'?>" type="text/css" rel="stylesheet" media="all">
 	<link href="<?=base_url().'assets/cms/css/style.css'?>" type="text/css" rel="stylesheet" media="all">
+	<link href="<?=base_url().'assets/cms/css/animate.css'?>" type="text/css" rel="stylesheet" media="all">
 	<link href="<?=base_url().'assets/cms/css/font-awesome.css'?>" rel="stylesheet">
 	<!-- font-awesome icons -->
 	<link rel="stylesheet" href="<?=base_url().'assets/cms/css/flexslider.css'?>" type="text/css" media="screen" />
@@ -170,7 +171,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="<?=base_url().'Welcome/contact'?>" class="three-d">Reach US
+									<a href="<?=base_url().'Welcome/contact'?>" class="three-d page-scroll">Reach US
 										<span aria-hidden="true" class="three-d-box">
 											<span class="front">Reach US</span>
 											<span class="back">Reach US</span>
@@ -187,7 +188,7 @@
 	<!-- about -->
 	<div class="w3ls-section w3-about_short" id="about_short" style="background:url('<?=base_url().'img/profile/B.png'?>')">
 		<div class="container">
-			<div class="about-main">
+			<div class="about-main animated fadeInRight">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="tittle">
@@ -219,7 +220,7 @@
 	<div class="w3ls-section w3-data-center" id="data-center" style="background:url('<?=base_url().'assets/cms/images/bg2.png'?>') no-repeat;background-size: cover;background-position:center;">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8">
+				<div class="col-md-8 animated fadeInLeft">
 					<div class="tittle">
 						<span>Solutions</span>
 					</div>
@@ -434,6 +435,15 @@
 	<?php $this->load->view("cms/include/footer"); ?>
 
 	<script type="text/javascript">
+		$('.page_scroll').on('click',function(e){
+			var tujuan = $(this).attr('href');
+			var elemenTujuan = $(tujuan);
+			$('body').animate({
+				scrollTop: elemenTujuan.offset().top - 50
+			}, 1250,'linear');
+			e.preventDefault();
+		});
+
 		var save_method;
 
 		$(document).ready(function () {

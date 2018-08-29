@@ -19,6 +19,7 @@
 	<!-- Custom Theme files -->
 	<link href="<?=base_url().'assets/cms/css/bootstrap.css'?>" type="text/css" rel="stylesheet" media="all">
 	<link href="<?=base_url().'assets/cms/css/style.css'?>" type="text/css" rel="stylesheet" media="all">
+	<link href="<?=base_url().'assets/cms/css/animate.css'?>" type="text/css" rel="stylesheet" media="all">
 	<link href="<?=base_url().'assets/cms/css/font-awesome.css'?>" rel="stylesheet">
 	<!-- font-awesome icons -->
 	<link rel="stylesheet" href="<?=base_url().'assets/cms/css/flexslider.css'?>" type="text/css" media="screen" />
@@ -111,10 +112,10 @@
 									</a>
 								</li>
 								<li>
-									<a href="<?=base_url().'Welcome/contact'?>" class="three-d">Reach US
+									<a href="#footer" class="three-d">Reach US
 										<span aria-hidden="true" class="three-d-box">
-											<span class="front">Reach US</span>
-											<span class="back">Reach US</span>
+										<span class="front">Reach US</span>
+										<span class="back">Reach US</span>
 									</a>
 								</li>
 						</ul>

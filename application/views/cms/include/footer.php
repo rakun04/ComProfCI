@@ -14,8 +14,9 @@
 							</div>
 							<hr class="hr-color">
 							<div class="body-ft-panel">
-								<?=$setting->alamat?>
+								<p><?=$setting->alamat?></p>
 							</div>
+							<br>
 							<a class="btn btn-primary btn-sm" data-toggle="modal" href='#map'>Map it</a>
 						</div>
 					</div>
@@ -74,6 +75,9 @@
 				<div class="modal fade" id="map">
 					<div class="modal-dialog">
 						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							</div>
 							<div class="modal-body">
 								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.6339013182987!2d107.61740291436742!3d-6.934284894989952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e887161ff37b%3A0xd2022ea1b54061e0!2sTali+Cahaya+Buana!5e0!3m2!1sid!2sid!4v1534982307449" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
 							</div>
@@ -150,6 +154,7 @@
 	<script src="<?=base_url().'assets/swt/sweetalert.min.js'?>"></script>
 
 	<script src="<?=base_url().'assets/cms/js/SmoothScroll.min.js'?>"></script>
+	<script src="<?=base_url().'assets/cms/js/jquery-easing.js'?>"></script>
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->

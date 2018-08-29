@@ -3514,7 +3514,9 @@ span.garis{
     color: #fff;
     background: rgb(158, 24, 31);
 }
-
+.btn-detail-prdct:active{
+    color: #fff;
+}
 .card {
     display: block;
       margin-bottom: 20px;
