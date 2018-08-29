@@ -127,18 +127,100 @@
 	<section class="w3ls-section w3-product-all" id="product-all">
 		<div class="container">
 			<div class="row">
-				<div class="tcb-prdct-panel">
-					<div class="tcb-prdct-body">
-						<div class="tcb-prdct-txt">
-
-						</div>
-						<div class="tcb-prdct-gmbr">
-							<img src="" alt="">
-						</div>
-					</div>
+				
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+						<div class="card">
+								<a class="img-card" href="#">
+									<img src="<?=base_url().'assets/cms/images/harnes.png'?>"/>
+								</a>
+								<br />
+								<div class="card-content">
+									<h4 class="card-title">
+										<a href="#">
+											HARNESS
+										</a>
+									</h4>
+									<div class="">
+										Lorem ipsum dolor sit amet consectetur adipisicing.
+									</div>
+								</div>
+								<div class="card-read-more">
+									<a class="btn btn-detail-prdct btn-block" href="#">
+										VIEW DETAILS
+									</a>
+								</div>
+							</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+						<div class="card">
+								<a class="img-card" href="#">
+									<img src="<?=base_url().'assets/cms/images/harnes.png'?>"/>
+								</a>
+								<br />
+								<div class="card-content">
+									<h4 class="card-title">
+										<a href="#">
+											HARNESS
+										</a>
+									</h4>
+									<div class="">
+										Lorem ipsum dolor sit amet consectetur adipisicing.
+									</div>
+								</div>
+								<div class="card-read-more">
+									<a class="btn btn-detail-prdct btn-block" pd-popup-open="popupNew" href='#'>
+										VIEW DETAILS
+									</a>
+								</div>
+							</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+						<div class="card">
+								<a class="img-card" href="#">
+									<img src="<?=base_url().'assets/cms/images/harnes.png'?>"/>
+								</a>
+								<br />
+								<div class="card-content">
+									<h4 class="card-title">
+										<a href="#">
+											HARNESS
+										</a>
+									</h4>
+									<div class="">
+										Lorem ipsum dolor sit amet consectetur adipisicing.
+									</div>
+								</div>
+								<div class="card-read-more">
+									<a class="btn btn-detail-prdct btn-block" href="#">
+										VIEW DETAILS
+									</a>
+								</div>
+							</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+						<div class="card">
+								<a class="img-card" href="#">
+									<img src="<?=base_url().'assets/cms/images/harnes.png'?>"/>
+								</a>
+								<br />
+								<div class="card-content">
+									<h4 class="card-title">
+										<a href="#">
+											HARNESS
+										</a>
+									</h4>
+									<div class="">
+										Lorem ipsum dolor sit amet consectetur adipisicing.
+									</div>
+								</div>
+								<div class="card-read-more">
+									<a class="btn btn-detail-prdct btn-block" href="#">
+										VIEW DETAILS
+									</a>
+								</div>
+							</div>
 				</div>
 			</div>
 		</div>
 	</section>
-
 	<?php $this->load->view("cms/include/footer"); ?>
