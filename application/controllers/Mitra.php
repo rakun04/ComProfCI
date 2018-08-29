@@ -85,15 +85,15 @@ class Mitra extends CI_Controller
           if ($this->upload->do_upload('image')){
               $gbr = $this->upload->data();
               //Compress Image
-              $config['image_library']='gd2';
+              /*$config['image_library']='gd2';
               $config['source_image']='./img/mitra/'.$gbr['file_name'];
               $config['create_thumb']= FALSE;
               $config['maintain_ratio']= FALSE;
-              $config['width']= 150;
-              $config['height']= 80;
+              $config['width']= 128;
+              $config['height']= 64;
               $config['new_image']= './img/mitra/'.$gbr['file_name'];
               $this->load->library('image_lib', $config);
-              $this->image_lib->resize();
+              $this->image_lib->resize();*/ 
 
               $gambar=$gbr['file_name'];
               $data = array(
@@ -138,15 +138,15 @@ class Mitra extends CI_Controller
           if ($this->upload->do_upload('image')){
               $gbr = $this->upload->data();
               //Compress Image
-              $config['image_library']='gd2';
+             /* $config['image_library']='gd2';
               $config['source_image']='./img/mitra/'.$gbr['file_name'];
               $config['create_thumb']= FALSE;
               $config['maintain_ratio']= FALSE;
-              $config['width']= 150;
-              $config['height']= 80;
+              $config['width']= 128;
+              $config['height']= 70;
               $config['new_image']= './img/mitra/'.$gbr['file_name'];
               $this->load->library('image_lib', $config);
-              $this->image_lib->resize();
+              $this->image_lib->resize();*/
 
               $gambar=$gbr['file_name'];
               $data = array(
