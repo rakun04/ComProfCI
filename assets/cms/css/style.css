@@ -3489,3 +3489,8 @@ span.garis{
     bottom: 15px;
     background: #026fbf;
 }
+.tcb-prdct-panel{
+    width: 450px;
+    height: 250px;
+    background: #ff7200;
+}
