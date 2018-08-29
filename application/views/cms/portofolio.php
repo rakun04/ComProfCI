@@ -34,6 +34,7 @@
 
 	<!-- //web-fonts -->
 </head>
+<?php $setting=$this->MModel->get("select * from profile where id_profile='1'");?>
 
 <body>
 	<!-- banner-info -->
@@ -44,11 +45,11 @@
 					<ul>
 						<li>
 							<a href="">
-								<i class="fa fa-phone"></i> +62 22 6145 6762</a>
+								<i class="fa fa-phone"></i> <?=$setting->telepon?></a>
 						</li>
 						<li>
 							<a href="">
-								<i class="fa fa-envelope"></i> office@tcb.co.id</a>
+								<i class="fa fa-envelope"></i> <?=$setting->email?></a>
 						</li>
 						<!-- <li style="float:right;">
 								<a href="">Register&nbsp;&nbsp;
@@ -136,6 +137,11 @@
 							<img src="" alt="">
 						</div>
 					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<?=$page?>
 				</div>
 			</div>
 		</div>

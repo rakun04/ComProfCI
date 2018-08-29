@@ -77,17 +77,17 @@
                     </center
 					<h6>send us a message</h6>
 					<div class="agileits-main-right">
-						<form action="#" method="post" class="agile_form">
+						<form action="#" id="formC" method="post" class="agile_form">
 							<label class="header">Name</label>
 							<div class="icon1 w3ls-name1">
-								<input placeholder=" " name="first name" type="text" required="">
+								<input placeholder=" " name="nama_client" type="text" required="">
 							</div>
 							<div class="icon2">
 								<label class="header">Email</label>
-								<input placeholder=" " name="Email" type="email" required="">
+								<input placeholder=" " name="email" type="email" required="">
 							</div>
 							<label class="header">your message</label>
-							<textarea class="w3l_summary" required=""></textarea>
+							<textarea class="w3l_summary" name="say" required=""></textarea>
 							<input type="submit" value="SEND">
 						</form>
 					</div>
@@ -128,3 +128,47 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnAL7xSSUJA0nu1Bi-4NiLFDvJ9xVQsRs&callback=initMap">
     </script>
+
+		<script type="text/javascript">
+		var save_method;
+
+		$(document).ready(function () {
+
+			$('input').change(function () {
+				$(this).parent().parent().removeClass('has-error');
+				$(this).next().empty();
+			});
+			$('select').change(function () {
+				$(this).parent().parent().removeClass('has-error');
+				$(this).next().empty();
+			});
+
+			
+
+			$('#formC').on('submit', function (e) {
+				var url = "<?=base_url().'Client/add';?>";
+				e.preventDefault();
+				$.ajax({
+					url: url,
+					method: "POST",
+					data: new FormData(this),
+					contentType: false,
+					cache: false,
+					processData: false,
+					success: function (data) {
+						alert("Message delivered");
+						location.reload();
+					}
+				});
+			});
+
+
+		
+
+		});
+
+		
+
+		
+		
+	</script>
