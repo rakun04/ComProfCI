@@ -404,29 +404,14 @@
 		<div class="container">
 		<h2 style="text-align:center;font-weight:bold;margin:15px 0px 50px 0px;">Partner</h2>
 					<div class="row"> 
+						<?php
+						$partner=$this->MModel->getData("select * from mitra");
+						if($partner){
+						foreach($partner as $part){?>
 						<div class="col-md-2 col-sm-4 col-xs-4">
-							<img src="<?=base_url().'assets/cms/images/tcb.png'?>" width="128px" alt="">
+							<a target="_blank" href="<?=$part['link_mitra']?>"><img src="<?=base_url().'img/mitra/'.$part['foto_mitra']?>" width="128px" alt=""></a>
 						</div>
-						<div class="col-md-2 col-sm-4 col-xs-4"> 
-							<img src="<?=base_url().'assets/cms/images/tcb.png'?>" width="128px" alt="">
-						
-						</div>
-						<div class="col-md-2 col-sm-4 col-xs-4"> 
-							<img src="<?=base_url().'assets/cms/images/tcb.png'?>" width="128px" alt="">
-						
-						</div>
-						<div class="col-md-2 col-sm-4 col-xs-4"> 
-							<img src="<?=base_url().'assets/cms/images/tcb.png'?>" width="128px" alt="">
-						
-						</div>
-						<div class="col-md-2 col-sm-4 col-xs-4"> 
-							<img src="<?=base_url().'assets/cms/images/tcb.png'?>" width="128px" alt="">
-						
-						</div>
-						<div class="col-md-2 col-sm-3 col-xs-3"> 
-							<img src="<?=base_url().'assets/cms/images/tcb.png'?>" width="128px" alt="">
-						
-						</div>
+						<?php }} ?>
 					</div>
 		</div>
 	</div>
