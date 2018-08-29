@@ -36,7 +36,7 @@
 						<i class="fa fa-check">&nbsp;</i>FINISHED PROJECTS</div>
 					<div id="box-enam2" class="text-center">
 						<span>
-							<h3>103</h3>
+							<h3><?= $this->db->where('status',"Portopolio")->from("project")->count_all_results(); ?></h3>
 						</span>
 						<h4>Projects</h4>
 					</div>
@@ -46,7 +46,7 @@
 						<i class="fa fa-lightbulb-o">&nbsp;</i>ON GOING PROJECTS</div>
 					<div id="box-enam2" class="text-center">
 						<span>
-							<h3>4</h3>
+							<h3><?= $this->db->where('status',"Process")->from("project")->count_all_results(); ?></h3>
 						</span>
 						<h4>Projects</h4>
 					</div>
@@ -56,19 +56,19 @@
 						<i class="fa fa-group">&nbsp;</i>ACTIVE EMPLOYEES</div>
 					<div id="box-enam2" class="text-center">
 						<span>
-							<h3>106</h3>
+							<h3><?= $this->db->count_all_results("anggota"); ?></h3>
 						</span>
 						<h4>Employees</h4>
 					</div>
 				</div>
 				<div class="col-md-3">
 					<div class="text-center box-enam1">
-						<i class="fa fa-clock-o">&nbsp;</i>HOURS OF WORK</div>
+						<i class="fa fa-clock-o">&nbsp;</i>Product</div>
 					<div id="box-enam2" class="text-center">
 						<span>
-							<h3>21.627</h3>
+							<h3><?= $this->db->count_all_results("product"); ?></h3>
 						</span>
-						<h4>Projects</h4>
+						<h4>Product</h4>
 					</div>
 				</div>
 			</div>
@@ -84,14 +84,14 @@
 				<h3 class="agileits-title" id="visim">
 						<span>Visi</span> <span class="garis"></span>
 					</h3>
-				<p class="text-vision">Memberikan solusi terbaik bagi para klien dan pengguna produk/jasa suveillance system agar dapat meningkatkan kerja bisnisnya dan memberikan rasa aman serta terkendali dengan menerapkan surveillance yang tepat dan optimal.</p>
+				<p class="text-vision"><?=$setting->visi?></p>
 				</div>
 				
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<h3 class="agileits-title" id="visim">
 						<span>Mision</span>  <span class="garis"></span>
 					</h3>
-					<p class="text-vision">Menjadi perusahaan terbaik dan terpercaya di bidang security system, dengan memberikan solusi yang dapat bermanfaat bagi klien dan pengguna produk/jasa survaeillance system.</p>
+					<p class="text-vision"><?=$setting->misi?></p>
 				</div>
 				
 			</div>
