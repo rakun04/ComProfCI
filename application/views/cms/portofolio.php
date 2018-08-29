@@ -128,15 +128,17 @@
 		<div class="container">
 			<div class="row">
 				<div class="tcb-prdct-panel">
-					<img src="" alt="">
 					<div class="tcb-prdct-body">
+						<div class="tcb-prdct-txt">
 
+						</div>
+						<div class="tcb-prdct-gmbr">
+							<img src="" alt="">
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
-
 	</section>
 
 	<?php $this->load->view("cms/include/footer"); ?>

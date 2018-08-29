@@ -92,9 +92,10 @@
 						$('body').removeClass('loading');
 					}
 				});
-			// });
+			});
 		</script>
-		<!-- //FlexSlider-->
+
+		<!-- //FlexSlider -->
 		<!-- banner-info -->
 		<div class="banner-agileinfo">
 			<div class="nav-info">

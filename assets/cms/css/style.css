@@ -3494,3 +3494,13 @@ span.garis{
     height: 250px;
     background: #ff7200;
 }
+.tcb-prdct-gmbr{
+    width: 200px;
+    background: #000000;
+    height: 250px;
+}
+.tcb-prdct-txt{
+    width: 450px;
+    background: #ccc;
+    height: 250px;
+}
