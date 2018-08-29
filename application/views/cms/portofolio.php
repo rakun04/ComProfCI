@@ -128,21 +128,22 @@
 	<section class="w3ls-section w3-product-all" id="product-all">
 		<div class="container">
 			<div class="row">
-				
+			<?php	if($data) {
+			foreach($data as $p){ ?>
 				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
 						<div class="card">
 								<a class="img-card" href="#">
-									<img src="<?=base_url().'assets/cms/images/harnes.png'?>"/>
+									<img src="<?=base_url().'img/product/'.$p['foto_product']?>"/>
 								</a>
 								<br />
 								<div class="card-content">
 									<h4 class="card-title">
 										<a href="#">
-											HARNESS
+											<?=$p['nama_product']?>
 										</a>
 									</h4>
 									<div class="">
-										Lorem ipsum dolor sit amet consectetur adipisicing.
+										<?=$p['deskripsi']?>
 									</div>
 								</div>
 								<div class="card-read-more">
@@ -152,75 +153,7 @@
 								</div>
 							</div>
 				</div>
-				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-						<div class="card">
-								<a class="img-card" href="#">
-									<img src="<?=base_url().'assets/cms/images/harnes.png'?>"/>
-								</a>
-								<br />
-								<div class="card-content">
-									<h4 class="card-title">
-										<a href="#">
-											HARNESS
-										</a>
-									</h4>
-									<div class="">
-										Lorem ipsum dolor sit amet consectetur adipisicing.
-									</div>
-								</div>
-								<div class="card-read-more">
-									<a class="btn btn-detail-prdct btn-block" pd-popup-open="popupNew" href='#'>
-										VIEW DETAILS
-									</a>
-								</div>
-							</div>
-				</div>
-				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-						<div class="card">
-								<a class="img-card" href="#">
-									<img src="<?=base_url().'assets/cms/images/harnes.png'?>"/>
-								</a>
-								<br />
-								<div class="card-content">
-									<h4 class="card-title">
-										<a href="#">
-											HARNESS
-										</a>
-									</h4>
-									<div class="">
-										Lorem ipsum dolor sit amet consectetur adipisicing.
-									</div>
-								</div>
-								<div class="card-read-more">
-									<a class="btn btn-detail-prdct btn-block" href="#">
-										VIEW DETAILS
-									</a>
-								</div>
-							</div>
-				</div>
-				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-						<div class="card">
-								<a class="img-card" href="#">
-									<img src="<?=base_url().'assets/cms/images/harnes.png'?>"/>
-								</a>
-								<br />
-								<div class="card-content">
-									<h4 class="card-title">
-										<a href="#">
-											HARNESS
-										</a>
-									</h4>
-									<div class="">
-										Lorem ipsum dolor sit amet consectetur adipisicing.
-									</div>
-								</div>
-								<div class="card-read-more">
-									<a class="btn btn-detail-prdct btn-block" href="#">
-										VIEW DETAILS
-									</a>
-								</div>
-							</div>
-				</div>
+			<?php } } ?>
 			</div>
 			<div class="row">
 				<div class="col-md-12">
