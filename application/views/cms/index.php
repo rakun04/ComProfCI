@@ -408,8 +408,8 @@
 						$partner=$this->MModel->getData("select * from mitra");
 						if($partner){
 						foreach($partner as $part){?>
-						<div class="col-md-2 col-sm-4 col-xs-4">
-							<a target="_blank" href="<?=$part['link_mitra']?>"><img src="<?=base_url().'img/mitra/'.$part['foto_mitra']?>" width="128px" alt=""></a>
+						<div class="col-md-2 col-lg-2 col-sm-4 col-xs-4">
+							<a target="_blank" href="<?=$part['link_mitra']?>"><img src="<?=base_url().'img/mitra/'.$part['foto_mitra']?>" width="64px" height="64px" alt=""></a>
 						</div>
 						<?php }} ?>
 					</div>
